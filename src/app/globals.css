@@ -104,3 +104,56 @@
 .animate-spin-slow {
   animation: spin-slow 12s linear infinite;
 }
+
+@keyframes pulse-gentle {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.05); opacity: 1; }
+}
+
+.animate-pulse-gentle {
+  animation: pulse-gentle 3s ease-in-out infinite;
+}
+
+@keyframes reveal {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.animate-reveal {
+  animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+@keyframes preloader-out {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
+}
+
+.animate-preloader-out {
+  animation: preloader-out 0.8s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+/* Professional Scrollbar Redesign */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-charcoal);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 10px;
+  border: 2px solid var(--color-charcoal);
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-orange);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #333333 var(--color-charcoal);
+}

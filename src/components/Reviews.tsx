@@ -18,22 +18,22 @@ const reviewsRow2 = [
 ];
 
 const ReviewCard = ({ review }: { review: typeof reviewsRow1[0] }) => (
-  <div className="bg-white p-8 rounded-2xl shadow-xl shadow-charcoal/5 border border-charcoal/5 relative min-w-[350px] mx-4 transition-all duration-300 hover:shadow-orange/10 hover:border-orange/20">
+  <div className="bg-white p-5 md:p-8 rounded-2xl shadow-xl shadow-charcoal/5 border border-charcoal/5 relative min-w-[240px] md:min-w-[350px] mx-3 md:mx-4 transition-all duration-300 hover:shadow-orange/10 hover:border-orange/20">
     <div className="flex justify-start space-x-1 mb-4">
       {[...Array(5)].map((_, i) => (
         <Star 
           key={i} 
-          size={16} 
+          size={14} 
           className={i < review.rating ? "fill-gold text-gold" : "text-gray-200"} 
         />
       ))}
     </div>
-    <p className="text-charcoal/80 font-sans italic mb-6 leading-relaxed">
+    <p className="text-charcoal/80 font-sans italic mb-6 leading-relaxed text-sm md:text-base">
       "{review.text}"
     </p>
     <div className="flex items-center space-x-3">
-      <div className="w-8 h-[1px] bg-orange"></div>
-      <p className="font-serif text-charcoal font-bold">{review.author}</p>
+      <div className="w-6 md:w-8 h-[1px] bg-orange"></div>
+      <p className="font-serif text-charcoal font-bold text-sm md:text-base">{review.author}</p>
     </div>
   </div>
 );

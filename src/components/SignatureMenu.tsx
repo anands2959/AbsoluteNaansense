@@ -12,13 +12,13 @@ const dishes = [
     name: 'Tandoori Chicken',
     description: 'Juicy chicken marinated in yogurt and traditional spices, roasted to perfection in a clay oven.',
     price: '₹480',
-    image: 'https://images.unsplash.com/photo-1628294895950-9805252327bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+    image: 'https://static.toiimg.com/thumb/53240689.cms?width=1200&height=900',
   },
   {
     name: 'Chilli Mushroom',
     description: 'Crispy fried mushrooms tossed in a spicy, tangy, and sweet chili sauce.',
     price: '₹320',
-    image: 'https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+    image: 'https://www.funfoodfrolic.com/wp-content/uploads/2020/06/Chilli-Mushroom-Thumbnail.jpg',
   },
   {
     name: 'Fresh Mojitos',

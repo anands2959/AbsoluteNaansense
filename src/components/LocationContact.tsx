@@ -36,7 +36,7 @@ export const LocationContact = () => {
               <h3 className="font-serif text-xl font-bold text-charcoal mb-2">Location</h3>
               <p className="text-charcoal/70 font-sans leading-relaxed">
                 1st Floor, Malakar Plaza,<br/>
-                near Nagar Nigam Office,<br/>
+                near Nagar Panchayat,<br/>
                 Renukoot, Uttar Pradesh 231217, India
               </p>
             </div>

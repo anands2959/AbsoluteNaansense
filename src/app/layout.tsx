@@ -1,3 +1,4 @@
+import { Preloader } from "@/components/Preloader";
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
@@ -26,6 +27,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} ${playfair.variable} font-sans antialiased text-charcoal bg-cream`}>
         <div className="noise-overlay" />
+        <Preloader />
         {children}
       </body>
     </html>

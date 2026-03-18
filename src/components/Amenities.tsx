@@ -66,26 +66,26 @@ export const Amenities = () => {
           <div className="hidden md:block w-20 h-px bg-charcoal/10 mb-4"></div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-4">
           {amenityGroups.map((group, idx) => (
             <div 
               key={idx} 
-              className={`p-5 rounded-2xl border border-charcoal/5 flex flex-col transition-all duration-500 hover:border-orange/20 hover:shadow-lg hover:shadow-charcoal/5 ${group.className}`}
+              className={`p-6 sm:p-5 rounded-2xl border border-charcoal/5 flex flex-col transition-all duration-500 hover:border-orange/20 hover:shadow-lg hover:shadow-charcoal/5 ${group.className}`}
             >
-              <div className="flex items-center space-x-2 mb-4">
-                 <group.icon size={16} className="text-orange shrink-0" />
-                 <h3 className="font-serif text-base font-bold text-charcoal truncate">
+              <div className="flex items-center space-x-3 sm:space-x-2 mb-4">
+                 <group.icon size={20} className="text-orange shrink-0 sm:size-4" />
+                 <h3 className="font-serif text-lg sm:text-base font-bold text-charcoal truncate">
                    {group.title}
                  </h3>
               </div>
               
-              <ul className="space-y-1.5">
+              <ul className="space-y-2 sm:space-y-1.5">
                 {group.items.map((item, iIdx) => (
                   <li 
                     key={iIdx} 
-                    className="flex items-center text-[11px] font-sans font-medium text-charcoal/60 leading-tight"
+                    className="flex items-center text-sm sm:text-[11px] font-sans font-medium text-charcoal/60 leading-tight"
                   >
-                    <Check size={10} className="mr-1.5 text-orange/40 shrink-0" />
+                    <Check size={14} className="mr-2 sm:mr-1.5 text-orange/40 shrink-0 sm:size-2.5" />
                     {item}
                   </li>
                 ))}
@@ -95,9 +95,9 @@ export const Amenities = () => {
         </div>
         
         {/* Subtle Utilities Line */}
-        <div className="mt-12 flex flex-wrap justify-center gap-x-12 gap-y-4 py-6 border-t border-charcoal/5">
+        <div className="mt-12 flex flex-wrap justify-center gap-x-8 sm:gap-x-12 gap-y-4 py-6 border-t border-charcoal/5">
            {["Free Wi-Fi", "Card Payments", "Late Night", "Reservations"].map((u, i) => (
-             <span key={i} className="text-[10px] uppercase tracking-widest font-bold text-charcoal/30 flex items-center">
+             <span key={i} className="text-[12px] sm:text-[10px] uppercase tracking-widest font-bold text-charcoal/30 flex items-center">
                <span className="w-1 h-1 bg-orange rounded-full mr-2"></span>
                {u}
              </span>

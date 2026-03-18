@@ -17,14 +17,14 @@ export const FloatingWhatsApp = () => {
       </span>
       
       {/* Pulse Effect */}
-      <div className="absolute inset-x-0 inset-y-0 right-0 w-16 h-16 bg-[#25D366] rounded-full animate-ping opacity-20 group-hover:opacity-40 transition-opacity ml-auto"></div>
+      <div className="absolute inset-x-0 inset-y-0 right-0 w-14 h-14 bg-[#25D366] rounded-full animate-ping opacity-20 group-hover:opacity-40 transition-opacity ml-auto"></div>
       
       {/* Main Button */}
-      <div className="relative w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-[0_10px_30px_rgba(37,211,102,0.4)] hover:shadow-[0_15px_40px_rgba(37,211,102,0.6)] hover:-translate-y-1 transition-all duration-300">
+      <div className="relative w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-[0_10px_30px_rgba(37,211,102,0.4)] hover:shadow-[0_15px_40px_rgba(37,211,102,0.6)] hover:-translate-y-1 transition-all duration-300">
         <svg 
           viewBox="0 0 24 24" 
-          width="32" 
-          height="32" 
+          width="28" 
+          height="28" 
           stroke="currentColor" 
           strokeWidth="0" 
           fill="currentColor" 

@@ -1,12 +1,12 @@
 import { Section } from './ui/Section';
 
 const images = [
-  'https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1528605248644-14dd04022da1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1414235077428-338988692259?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1544148103-0773bf10d330?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+  'https://lh3.googleusercontent.com/p/AF1QipOcsszsg2WPUQbjKoMMfpDkaUL7uxbcgG1PTE35',
+  'https://lh3.googleusercontent.com/gps-cs-s/AHVAwersTo9QZdosva4sbwUldk-DM7RGgI241raORMcJbTJ5nGItdRcwf-Ds41TuUUghP34cP-5wYO4_tY-gYcxOC9bZC6fHxoSZj34ZNmLR4jje_XCejllmd8KBUuLcBKfHIbIQM1RJ',
+  'https://lh3.googleusercontent.com/gps-cs-s/AHVAwep2-OB8btRzon0YmrtT40z7e-bE-_GBJ9QlaEfxtiVpPNZnHEHYeaYmsOYlooVOXLphO4qI28xWfxkkonl2r285fQguyI6JGCebF4IoP6FLAJuGoHS-TjJNEgKh1ftVgQ-Bu6rd',
+  'https://lh3.googleusercontent.com/gps-cs-s/AHVAwerooDV0-d5cbFPaQOv19Rz3ZITMMCeUfQ_YhwPCZ78mp-nDootaZ0dNzzg655DYK64N-2kHFdrtdUv4dymyim1QMkinQzZQ9ixkG96nfaQa5brePQXpa6wV7WlTgNRDIXF8WLBziA',
+  'https://lh3.googleusercontent.com/p/AF1QipModgDkDGmvjuQxIMHyLH0SpZcUNzt8koVWdBa7',
+  'https://lh3.googleusercontent.com/gps-cs-s/AHVAweoGbcq6o_9UwxHTYcvGGCnSwU92wAw_3YRHdVQXzORB8RKLORc-F1WXJSs4B32u5GP5NYb-sQs3kYVusr1v7swHaEvr1t38skCkSTigijWeDImJ3eQRfJ2wyW-lo952JhnOvr31AQ',
 ];
 
 export const Gallery = () => {

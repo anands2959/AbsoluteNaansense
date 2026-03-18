@@ -65,16 +65,30 @@ export const Features = () => {
           </div>
         </div>
 
-        {/* Compact Dynamic Image Layering */}
-        <div className="relative h-[400px] hidden lg:block">
-          <div className="absolute top-0 left-[5%] w-[35%] h-[300px] rounded-[40px] overflow-hidden rotate-[-2deg] shadow-xl z-20 hover:rotate-0 transition-transform duration-700">
-            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=2000" className="w-full h-full object-cover" alt="Interior" />
+        {/* Dynamic Image Layering - Redesigned for all screens */}
+        <div className="relative h-[350px] sm:h-[450px] lg:h-[500px] mt-16 flex items-center justify-center overflow-visible">
+          {/* Left Decorative Image */}
+          <div className="absolute left-[-2%] sm:left-[5%] lg:left-[10%] w-[48%] sm:w-[40%] h-[250px] sm:h-[320px] lg:h-[380px] rounded-[30px] sm:rounded-[40px] overflow-hidden -rotate-6 sm:-rotate-3 shadow-2xl z-10 border-4 border-white/10 transition-all duration-700 hover:rotate-0 hover:scale-105 group">
+            <img 
+              src="https://lh3.googleusercontent.com/p/AF1QipOcsszsg2WPUQbjKoMMfpDkaUL7uxbcgG1PTE35" 
+              className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700" 
+              alt="Interior" 
+            />
           </div>
-          <div className="absolute bottom-0 right-[15%] w-[40%] h-[320px] rounded-[40px] overflow-hidden rotate-[3deg] shadow-xl z-10 hover:rotate-0 transition-transform duration-700">
-            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=2000" className="w-full h-full object-cover" alt="Table Setting" />
+
+          {/* Right Decorative Image */}
+          <div className="absolute right-[-2%] sm:right-[5%] lg:right-[10%] w-[48%] sm:w-[40%] h-[280px] sm:h-[350px] lg:h-[420px] rounded-[30px] sm:rounded-[40px] overflow-hidden rotate-6 sm:rotate-3 shadow-2xl z-20 border-4 border-white/10 transition-all duration-700 hover:rotate-0 hover:scale-105 group translate-y-8 sm:translate-y-12 lg:translate-y-16">
+            <img 
+              src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=2000" 
+              className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700" 
+              alt="Table Setting" 
+            />
           </div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-orange text-white rounded-full flex items-center justify-center font-serif text-lg font-bold italic shadow-xl z-30 animate-spin-slow border-4 border-white/20">
-            Est. 2023
+
+          {/* Center Badge - Touching both images */}
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-28 h-28 sm:w-36 sm:h-36 lg:w-44 lg:h-44 bg-orange text-white rounded-full flex flex-col items-center justify-center font-serif shadow-[0_15px_30px_rgba(255,122,24,0.4)] z-30 animate-spin-slow border-[6px] sm:border-[8px] border-white/30 backdrop-blur-sm group hover:scale-110 transition-transform duration-500 cursor-pointer">
+            <span className="text-[10px] sm:text-xs uppercase tracking-widest font-bold opacity-80">Est.</span>
+            <span className="text-2xl sm:text-4xl lg:text-5xl font-black italic">2023</span>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 import { Button } from './ui/Button';
@@ -29,8 +30,18 @@ export const Header = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-charcoal shadow-lg py-4' : 'bg-transparent py-6'}`}>
       <div className="container mx-auto px-6 max-w-7xl flex items-center justify-between">
-        <a href="#" className="font-serif text-2xl font-bold tracking-tight text-cream">
-          Absolute <span className="text-orange italic">Naansense</span>
+        <a href="#" className="flex items-center space-x-3 group">
+          <div className="relative w-10 h-10 md:w-12 md:h-12 overflow-hidden rounded-full border-2 border-orange/30 group-hover:border-orange transition-colors">
+            <Image 
+              src="/logo.png" 
+              alt="Absolute Naansense Logo" 
+              fill
+              className="object-cover"
+            />
+          </div>
+          <span className="font-serif text-xl md:text-2xl font-bold tracking-tight text-cream">
+            Absolute <span className="text-orange italic">नान - sense</span>
+          </span>
         </a>
 
         {/* Desktop Nav */}

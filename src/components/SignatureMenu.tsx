@@ -33,10 +33,10 @@ const dishes = [
     image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
   },
   {
-    name: 'Classic Indian Breads',
+    name: 'Classic Indian Drink',
     description: 'Assortment of freshly baked naan, roti, and parathas straight from the tandoor.',
     price: '₹80',
-    image: 'https://images.unsplash.com/photo-1605481744883-7977a456de95?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+    image: 'https://lh3.googleusercontent.com/p/AF1QipNkXYZkf_AHv9CyDBSbeu2Xje9XvMPs20NZEu8-',
   },
 ];
 

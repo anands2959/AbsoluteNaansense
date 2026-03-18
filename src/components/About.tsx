@@ -6,7 +6,7 @@ export const About = () => {
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div className="relative h-[600px] w-full rounded-tr-[100px] rounded-bl-[100px] overflow-hidden shadow-2xl group">
           <img 
-            src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+            src=  "https://lh3.googleusercontent.com/p/AF1QipOwr_z19t4DNxbOoknrRC8pnkINOCY64nrKZGZw" 
             alt="Interior of Absolute Naansense" 
             className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           />

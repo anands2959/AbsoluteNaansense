@@ -6,10 +6,9 @@ import { ReservationModal } from './ReservationModal';
 import { ChevronRight, ArrowRight } from 'lucide-react';
 
 const heroImages = [
-  "https://images.unsplash.com/photo-1544148103-0773bf10d330?q=80&w=2670",
-  "https://images.unsplash.com/photo-1517248135467-4c7ed9d42c77?q=80&w=2670",
-  "https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=2670",
-  "https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=2670"
+  "https://lh3.googleusercontent.com/gps-cs-s/AHVAwerSdRHgilcnPNh3FrBwCiFUaxzrIY3bF4-xg91_LsOnz77MUTCoCYBxNRrdXlvvpnbPdVgX7tqzmM2t7b0j9_ZHkzmLlDc1iG-gdTZrabZ674A7CsJgF11MNgWetDUTrqw9Cxa8jQ",
+  "https://lh3.googleusercontent.com/p/AF1QipOgFfU4pOYlwFtGt3RlOxaCEyG0qnG4xy1-AnB5",
+  "https://lh3.googleusercontent.com/p/AF1QipOwr_z19t4DNxbOoknrRC8pnkINOCY64nrKZGZw"
 ];
 
 export const Hero = () => {
@@ -83,23 +82,23 @@ export const Hero = () => {
           </div>
 
           {/* Decorative Floating Element */}
-          <div className="lg:w-2/5 flex flex-col items-center justify-center relative">
-            <div className="w-64 h-64 md:w-80 md:h-80 border border-white/30 rounded-full flex items-center justify-center relative p-8 backdrop-blur-[2px] bg-white/5 shadow-2xl">
+          <div className="lg:w-2/5 flex flex-col items-center justify-center relative  mb-10 lg:mt-0">
+            <div className="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 border border-white/30 rounded-full flex items-center justify-center relative p-8 backdrop-blur-[2px] bg-white/5 shadow-2xl">
               <div className="absolute inset-0 border-t-2 border-orange rounded-full animate-spin-slow"></div>
               <div className="text-center">
-                <p className="font-serif text-4xl md:text-5xl text-cream italic font-bold mb-2 drop-shadow-lg">Since</p>
-                <p className="font-sans text-orange text-5xl md:text-6xl font-black italic tracking-tighter drop-shadow-2xl">2023</p>
+                <p className="font-serif text-3xl sm:text-4xl md:text-5xl text-cream italic font-bold mb-2 drop-shadow-lg">Since</p>
+                <p className="font-sans text-orange text-4xl sm:text-5xl md:text-6xl font-black italic tracking-tighter drop-shadow-2xl">2023</p>
               </div>
             </div>
 
             {/* Small Floating Details */}
-            <div className="absolute top-0 right-0 p-5 border border-white/20 bg-charcoal/60 backdrop-blur-xl rounded-2xl -rotate-12 translate-y-[-20%] shadow-2xl">
-              <p className="text-[11px] text-gold uppercase tracking-[0.2em] font-bold">Authentic</p>
-              <p className="text-cream text-lg font-serif italic">Multi-Cuisine</p>
+            <div className="absolute -top-4 -right-2 sm:top-0 sm:right-0 p-3 sm:p-5 border border-white/20 bg-charcoal/60 backdrop-blur-xl rounded-2xl -rotate-12 translate-y-[-10%] sm:translate-y-[-20%] shadow-2xl">
+              <p className="text-[10px] sm:text-[11px] text-gold uppercase tracking-[0.2em] font-bold">Authentic</p>
+              <p className="text-cream text-base sm:text-lg font-serif italic">Multi-Cuisine</p>
             </div>
-            <div className="absolute bottom-10 left-[-20px] p-5 border border-white/20 bg-charcoal/60 backdrop-blur-xl rounded-2xl rotate-6 shadow-2xl">
-              <p className="text-[11px] text-gold uppercase tracking-[0.2em] font-bold">Ambience</p>
-              <p className="text-cream text-lg font-serif italic">Soulful Aesthetic</p>
+            <div className="absolute -bottom-4 -left-2 sm:bottom-10 sm:left-[-20px] p-3 sm:p-5 border border-white/20 bg-charcoal/60 backdrop-blur-xl rounded-2xl rotate-6 shadow-2xl">
+              <p className="text-[10px] sm:text-[11px] text-gold uppercase tracking-[0.2em] font-bold">Ambience</p>
+              <p className="text-cream text-base sm:text-lg font-serif italic">Soulful Aesthetic</p>
             </div>
           </div>
 

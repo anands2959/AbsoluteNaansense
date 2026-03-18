@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Instagram, Facebook, Twitter } from 'lucide-react';
 
 export const Footer = () => {
@@ -7,8 +8,18 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8 mb-12">
           
           <div className="col-span-1 md:col-span-2">
-            <a href="#" className="font-serif text-3xl font-bold tracking-tight text-cream inline-block mb-6">
-              Absolute <span className="text-orange italic">Naansense</span>
+            <a href="#" className="flex items-center space-x-3 mb-6 group">
+              <div className="relative w-12 h-12 overflow-hidden rounded-full border-2 border-orange/20 group-hover:border-orange transition-colors">
+                <Image 
+                  src="/logo.png" 
+                  alt="Absolute Naansense Logo" 
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <span className="font-serif text-2xl md:text-3xl font-bold tracking-tight text-cream">
+                Absolute <span className="text-orange italic"> नान - sense</span>
+              </span>
             </a>
             <p className="text-cream/60 font-sans text-sm max-w-sm leading-relaxed mb-8">
               A stylish dine-in restaurant in Renukoot known for tasty food, relaxed ambiance, and a modern aesthetic environment.

@@ -7,8 +7,8 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8 mb-12">
           
           <div className="col-span-1 md:col-span-2">
-            <a href="#" className="font-serif text-3xl font-bold tracking-wider text-cream inline-block mb-6">
-              ABSOLUTE<span className="text-orange">.</span>
+            <a href="#" className="font-serif text-3xl font-bold tracking-tight text-cream inline-block mb-6">
+              Absolute <span className="text-orange italic">Naansense</span>
             </a>
             <p className="text-cream/60 font-sans text-sm max-w-sm leading-relaxed mb-8">
               A stylish dine-in restaurant in Renukoot known for tasty food, relaxed ambiance, and a modern aesthetic environment.

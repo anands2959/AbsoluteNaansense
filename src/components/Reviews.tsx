@@ -2,19 +2,19 @@ import { Section } from './ui/Section';
 import { Star } from 'lucide-react';
 
 const reviewsRow1 = [
-  { text: "Food is very tasty and healthy. Service is good and atmosphere is well maintained.", author: "Rahul S.", rating: 5 },
+  { text: "Food is very tasty and healthy. Service is good and atmosphere is well maintained.", author: "Rahul S.", rating: 4 },
   { text: "Awesome place in Renukoot for outings with friends and family. Highly recommend the Mutton Biryani!", author: "Priya M.", rating: 5 },
   { text: "Beautiful interiors, calm vibe, and tasty food. The perfect spot for weekend dinners.", author: "Amit V.", rating: 4 },
-  { text: "The best naan I've ever had. Truly lives up to the name Absolute Naansense!", author: "Suresh K.", rating: 5 },
-  { text: "Excellent hospitality and the ambiance is just perfect for a date night.", author: "Anjali R.", rating: 5 },
+  { text: "The best naan I've ever had. Truly lives up to the name Absolute Naansense!", author: "Suresh K.", rating: 4 },
+  { text: "Excellent hospitality and the ambiance is just perfect for a date night.", author: "Anjali R.", rating: 4 },
 ];
 
 const reviewsRow2 = [
   { text: "A hidden gem in Renukoot. The Chilli Mushroom is a must-try!", author: "Vikram T.", rating: 5 },
   { text: "Friendly staff and very quick service. Loved the mojitos.", author: "Neha G.", rating: 4 },
-  { text: "Great value for money. The portions are generous and the food is fresh.", author: "Rajesh L.", rating: 5 },
-  { text: "Clean, hygienic and very well-presented dishes. A solid 10/10.", author: "Meera B.", rating: 5 },
-  { text: "Perfect for family gatherings. The kids loved the chocolate shake!", author: "Sanjay D.", rating: 5 },
+  { text: "Great value for money. The portions are generous and the food is fresh.", author: "Rajesh L.", rating: 3 },
+  { text: "Clean, hygienic and very well-presented dishes. A solid 10/10.", author: "Meera B.", rating: 4 },
+  { text: "Perfect for family gatherings. The kids loved the chocolate shake!", author: "Sanjay D.", rating: 4 },
 ];
 
 const ReviewCard = ({ review }: { review: typeof reviewsRow1[0] }) => (

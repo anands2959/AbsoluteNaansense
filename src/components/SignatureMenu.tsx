@@ -53,27 +53,27 @@ export const SignatureMenu = () => {
         {dishes.map((dish, idx) => (
           <div key={idx} className="relative group h-[280px] md:h-[450px] overflow-hidden rounded-2xl md:rounded-3xl cursor-pointer shadow-xl md:shadow-2xl shadow-charcoal/40">
             {/* Base Image */}
-            <img 
-              src={dish.image} 
-              alt={dish.name} 
+            <img
+              src={dish.image}
+              alt={dish.name}
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
             />
-            
+
             {/* Initial Dark Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/20 to-transparent opacity-60 transition-opacity duration-500 group-hover:opacity-0"></div>
 
             {/* Hover Content Overlay */}
             <div className="absolute inset-x-0 bottom-0 top-0 bg-charcoal/60 backdrop-blur-[6px] opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col items-center justify-center p-8 text-center border border-white/10 m-4 rounded-2xl transform translate-y-4 group-hover:translate-y-0">
               <div className="w-12 h-[1px] bg-gold mb-6 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 delay-100"></div>
-              
+
               <h3 className="font-serif text-xl md:text-3xl font-bold text-cream mb-2 md:mb-4 tracking-wide">
                 {dish.name}
               </h3>
-              
+
               <p className="hidden md:block text-cream/80 text-sm leading-relaxed font-sans mb-8 max-w-[240px]">
                 {dish.description}
               </p>
-              
+
               <div className="text-gold font-serif text-lg md:text-2xl font-bold mb-4 md:mb-8">
                 {dish.price}
               </div>

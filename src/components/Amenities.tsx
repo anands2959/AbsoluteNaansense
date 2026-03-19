@@ -66,20 +66,20 @@ export const Amenities = () => {
           <div className="hidden md:block w-20 h-px bg-charcoal/10 mb-4"></div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 sm:gap-4">
           {amenityGroups.map((group, idx) => (
             <div 
               key={idx} 
               className={`p-6 sm:p-5 rounded-2xl border border-charcoal/5 flex flex-col transition-all duration-500 hover:border-orange/20 hover:shadow-lg hover:shadow-charcoal/5 ${group.className}`}
             >
               <div className="flex items-center space-x-3 sm:space-x-2 mb-4">
-                 <group.icon size={20} className="text-orange shrink-0 sm:size-4" />
+                 <group.icon size={24} className="text-orange shrink-0 sm:size-4" />
                  <h3 className="font-serif text-lg sm:text-base font-bold text-charcoal truncate">
                    {group.title}
                  </h3>
               </div>
               
-              <ul className="space-y-2 sm:space-y-1.5">
+              <ul className="grid grid-cols-2 gap-y-2 sm:gap-y-1.5 gap-x-2">
                 {group.items.map((item, iIdx) => (
                   <li 
                     key={iIdx} 

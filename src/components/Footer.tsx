@@ -25,14 +25,11 @@ export const Footer = () => {
               A stylish dine-in restaurant in Renukoot known for tasty food, relaxed ambiance, and a modern aesthetic environment.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-cream hover:bg-orange hover:text-white transition-colors">
+              <a href="#" className="w-10 h-10 rounded flex items-center justify-center text-cream hover:bg-orange hover:text-white transition-colors">
                 <Instagram size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-cream hover:bg-orange hover:text-white transition-colors">
+              <a href="#" className="w-10 h-10  rounded flex items-center justify-center text-cream hover:bg-orange hover:text-white transition-colors">
                 <Facebook size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-cream hover:bg-orange hover:text-white transition-colors">
-                <Twitter size={18} />
               </a>
             </div>
           </div>

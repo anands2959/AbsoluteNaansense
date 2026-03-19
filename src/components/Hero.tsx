@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from './ui/Button';
 import { ReservationModal } from './ReservationModal';
-import { ChevronRight, ArrowRight } from 'lucide-react';
+import { ChevronRight, ArrowRight, ChefHat, Sparkles } from 'lucide-react';
 
 const heroImages = [
   "https://lh3.googleusercontent.com/gps-cs-s/AHVAwerSdRHgilcnPNh3FrBwCiFUaxzrIY3bF4-xg91_LsOnz77MUTCoCYBxNRrdXlvvpnbPdVgX7tqzmM2t7b0j9_ZHkzmLlDc1iG-gdTZrabZ674A7CsJgF11MNgWetDUTrqw9Cxa8jQ",
@@ -50,31 +50,34 @@ export const Hero = () => {
           {/* Main Narrative - Enhanced Readability for Lighter Background */}
           <div className="lg:w-3/5 text-left">
             <div className="inline-flex items-center space-x-2 px-4 py-2  text-orange font-sans font-bold text-xs uppercase tracking-[0.2em] mb-8">
-              
+
               <span>In Renukoot</span>
             </div>
 
-            <h1 className="font-serif text-6xl md:text-8xl lg:text-[100px] text-cream font-bold leading-[0.9] mb-12 tracking-tight drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]">
+            <h1 className="font-serif text-6xl md:text-8xl lg:text-[110px] text-cream font-bold leading-[0.85] mb-12 tracking-tight drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]">
               Beyond <br />
               <span className="text-orange italic -ml-4 md:-ml-8 relative inline-block drop-shadow-lg">
                 Dining.
-                <div className="absolute -bottom-2 right-0 w-24 h-1 bg-gold opacity-60"></div>
+              </span> <br />
+              <span className="text-white relative inline-block">
+                Pure <span className="text-orange italic">Solace.</span>
+                <div className="absolute -bottom-2 right-0 w-32 h-1.5 bg-gold opacity-40 blur-[1px]"></div>
               </span>
             </h1>
 
-            <div className="bg-charcoal/30 backdrop-blur-[2px] p-4 -ml-4 rounded-2xl inline-block mb-12 border border-white/5">
-              <p className="font-sans text-xl md:text-2xl text-cream max-w-xl leading-relaxed drop-shadow-md">
-                Experience a journey of extraordinary flavors and aesthetic solace.
-                Absolute Naansense is where moments turn into memories.
+            <div className="max-w-md mb-12 border-l border-orange/30 pl-6">
+              <p className="font-sans text-base md:text-lg text-cream/70 leading-relaxed font-medium">
+                Where extraordinary flavors meet aesthetic solace. <br />
+                Crafting moments that turn into memories.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row items-start gap-6">
-              <Button size="xl" variant="primary" onClick={() => setIsModalOpen(true)} className="group rounded-full px-10 shadow-[0_20px_40px_rgba(255,122,24,0.3)]">
+              <Button size="lg" variant="primary" onClick={() => setIsModalOpen(true)} className="group rounded-full px-10 shadow-[0_20px_40px_rgba(255,122,24,0.3)]">
                 Reserve a Table
-                <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                <ChevronRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button size="xl" variant="ghost" className="text-cream hover:text-white group flex items-center bg-white/10 backdrop-blur-md rounded-full px-8 shadow-xl" onClick={() => document.getElementById('signature-menu')?.scrollIntoView({ behavior: 'smooth' })}>
+              <Button size="lg" variant="ghost" className="text-cream hover:text-white group flex items-center bg-white/10 backdrop-blur-md rounded-full px-8 shadow-xl" onClick={() => document.getElementById('signature-menu')?.scrollIntoView({ behavior: 'smooth' })}>
                 Explore our story
                 <ChevronRight size={20} className="ml-1 opacity-100 group-hover:translate-x-1 transition-all" />
               </Button>
@@ -91,14 +94,22 @@ export const Hero = () => {
               </div>
             </div>
 
-            {/* Small Floating Details */}
-            <div className="absolute -top-4 -right-2 sm:top-0 sm:right-0 p-3 sm:p-5 border border-white/20 bg-charcoal/60 backdrop-blur-xl rounded-2xl -rotate-12 translate-y-[-10%] sm:translate-y-[-20%] shadow-2xl">
-              <p className="text-[10px] sm:text-[11px] text-gold uppercase tracking-[0.2em] font-bold">Authentic</p>
-              <p className="text-cream text-base sm:text-lg font-serif italic">Multi-Cuisine</p>
+            {/* Small Floating Details - Human Centric/Scrapbook Style */}
+            <div className="absolute -top-6 -right-6 w-28 h-28 sm:w-32 sm:h-32 flex flex-col items-center justify-center bg-orange/90 text-white shadow-2xl rotate-12 group hover:rotate-0 transition-transform duration-700 border-2 border-white/30 z-20 rounded-[45%_55%_50%_40%/50%_45%_55%_50%]">
+              <ChefHat size={28} className="mb-1 sm:size-8 opacity-80" />
+              <p className="text-[10px] uppercase tracking-widest font-bold opacity-70">Authentic</p>
+              <p className="text-sm sm:text-base font-serif italic whitespace-nowrap">Multi-Cuisine</p>
             </div>
-            <div className="absolute -bottom-4 -left-2 sm:bottom-10 sm:left-[-20px] p-3 sm:p-5 border border-white/20 bg-charcoal/60 backdrop-blur-xl rounded-2xl rotate-6 shadow-2xl">
-              <p className="text-[10px] sm:text-[11px] text-gold uppercase tracking-[0.2em] font-bold">Ambience</p>
-              <p className="text-cream text-base sm:text-lg font-serif italic">Soulful Aesthetic</p>
+            
+            <div className="absolute -bottom-10 -left-6 sm:-left-12 p-3 bg-[#FAF9F6] text-charcoal border border-charcoal/5 -rotate-3 shadow-2xl group hover:rotate-2 transition-all duration-700 z-20 rounded-[15px_60px_20px_45px]">
+               {/* Translucent Tape Effect */}
+               {/* <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-7 bg-white/40 backdrop-blur-[2px] -rotate-2 border border-white/10 shadow-sm"></div> */}
+               
+               <div className="flex items-center space-x-2 text-orange mb-1">
+                 {/* <Sparkles size={16} className="opacity-80" /> */}
+                 <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.2em] font-bold opacity-60">Ambience</p>
+               </div>
+               <p className="text-charcoal/80 text-lg sm:text-xl font-serif italic leading-tight">Soulful Aesthetic</p>
             </div>
           </div>
 

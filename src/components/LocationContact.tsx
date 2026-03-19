@@ -29,9 +29,8 @@ export const LocationContact = () => {
         
         <div className="order-1 lg:order-2 space-y-8 lg:pl-8">
           <div className="flex items-start space-x-4">
-            <div className="w-12 h-12 rounded-full bg-orange/10 flex items-center justify-center shrink-0">
-              <MapPin className="text-orange" size={24} />
-            </div>
+                          <MapPin className="text-orange" size={26} />
+
             <div>
               <h3 className="font-serif text-xl font-bold text-charcoal mb-2">Location</h3>
               <p className="text-charcoal/70 font-sans leading-relaxed">
@@ -43,9 +42,8 @@ export const LocationContact = () => {
           </div>
 
           <div className="flex items-start space-x-4">
-            <div className="w-12 h-12 rounded-full bg-orange/10 flex items-center justify-center shrink-0">
-              <Phone className="text-orange" size={24} />
-            </div>
+                          <Phone className="text-orange" size={26} />
+
             <div>
               <h3 className="font-serif text-xl font-bold text-charcoal mb-2">Contact</h3>
               <p className="text-charcoal/70 font-sans leading-relaxed text-lg">+91 82990 18895</p>
@@ -53,9 +51,8 @@ export const LocationContact = () => {
           </div>
 
           <div className="flex items-start space-x-4">
-            <div className="w-12 h-12 rounded-full bg-orange/10 flex items-center justify-center shrink-0">
-              <Clock className="text-orange" size={24} />
-            </div>
+                          <Clock className="text-orange" size={26} />
+
             <div>
               <h3 className="font-serif text-xl font-bold text-charcoal mb-2">Opening Hours</h3>
               <p className="text-charcoal/70 font-sans leading-relaxed">
